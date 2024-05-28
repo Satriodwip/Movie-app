@@ -44,7 +44,7 @@
                 <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
                     <div class="col-span-1 flex items-center">
                         <p class="text-sm font-medium text-black dark:text-white">
-                            {{$genre['id']}}
+                            {{$genre->id}}
                         </p>
                     </div>
                     <div class="col-span-2 flex items-center">
@@ -52,12 +52,12 @@
                             <img src="src/images/movie/{{$genre['poster']}}" alt="Product" />
                         </div>
                         <p class="text-sm font-medium m-3 text-black dark:text-white">
-                            {{$genre['title']}}
+                            {{$genre->title}}
                         </p>
                     </div>
                     <div class="col-span-4 flex items-center">
                         <p class="text-sm font-medium text-black dark:text-white">
-                            {{$genre['descripsi']}}
+                            {{$genre->descripsi}}
                         </p>
                     </div>
                     <div class="col-span-1 flex items-center">

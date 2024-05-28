@@ -50,30 +50,30 @@
                 <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
                     <div class="col-span-1 flex items-center">
                         <p class="text-sm font-medium text-black dark:text-white">
-                            {{$review['id']}}
+                            {{$review->id}}
                         </p>
                     </div>
                     <div class="col-span-2 flex items-center">
                         <div class="w-12 rounded-md">
-                            <img src="src/images/movie/{{$review['poster']}}" alt="Product" />
+                            <img src="src/images/movie/{{$review->poster}}" alt="Product" />
                         </div>
                         <p class="text-sm font-medium m-3 text-black dark:text-white">
-                            {{$review['title']}}
+                            {{$review->title}}
                         </p>
                     </div>
                     <div class="col-span-1 flex items-center">
                         <p class="text-sm font-medium text-black dark:text-white">
-                            {{$review['user']}}
+                            {{$review->user}}
                         </p>
                     </div>
                     <div class="col-span-1 flex items-center">
                         <p class="text-sm font-medium text-black dark:text-white">
-                            {{$review['rating']}}
+                            {{$review->rating}}
                         </p>
                     </div>
                     <div class="col-span-2 flex items-center">
                         <p class="text-sm font-medium text-black dark:text-white">
-                            {{$review['date']}}
+                            {{$review->date}}
                         </p>
                     </div>
                     <div class="col-span-1 flex items-center">
