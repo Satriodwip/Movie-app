@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Genre;
-use App\Http\Controllers;
+use App\Models\Movie;
 use Illuminate\Http\Request;
 
 class GenreController extends Controller
@@ -12,16 +12,16 @@ class GenreController extends Controller
     {
         $genres = Genre::all();
 
-        return view('genres/index', compact('genres'));
+        return view('genres.index', compact('genres'));
     }
 
-        public function create()
+    public function create()
     {
         $genres = Genre::all();
         return view('genres.create', compact('genres'));
     }
-
-        public function store(Request $request)
+    
+    public function store(Request $request)
     {
         $validatedData = $request->validate([
             'name' => 'required',
@@ -33,9 +33,27 @@ class GenreController extends Controller
         return redirect('/genres')->with('success', 'Genre added successfully!');
     }
 
-        public function destroy(Genre $genre)
+    public function destroy(Genre $genre)
     {
         $genre->delete();
-        return redirect('/genres')->with('success', 'Ganre deleted successfully!');
+        return redirect('/genres')->with('success', 'Genre deleted successfully!');
+    }
+
+    public function edit(Genre $genre)
+    {
+        $genres = Genre::all();
+        return view('genres.edit', compact('genre', 'genres'));
+    }
+
+    public function update(Request $request, Genre $genre)
+    {
+        $validatedData = $request->validate([
+            'name' => 'required',
+            'descripsi' => 'required',
+        ]);
+
+        $genre->update($validatedData);
+
+        return redirect('/genres')->with('success', 'Genre updated successfully!');
     }
 }

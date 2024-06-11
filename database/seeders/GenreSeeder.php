@@ -16,22 +16,27 @@ class GenreSeeder extends Seeder
         Genre::create([
             'id' => 1,
             'name' => 'Shounen',
-            'descripsi' => 'Secara harfiah, shounen memiliki arti anak laki-laki. Mengutip Kotaku, istilah shounen umumnya merujuk pada anak laki-laki di bawah umur 15 tahun. Jadi, anime dan manga yang disebut shounen ditujukan untuk penonton di usia tersebut.',
+            'descripsi' => 'Kebalikan dari shoujo, genre anime ini diproduksi untuk para remaja laki-laki pada kelompok umur 12—18 tahun. Shounen sendiri diambil dari bahasa Kanji yang artinya anak laki-laki.',
         ]);
         Genre::create([
             'id' => 2,
             'name' => 'Drama',
-            'descripsi' => 'Drama adalah komposisi syair atau prosa yang diharapkan dapat menggambarkan kehidupan dan watak, melalui tingkah laku (akting) atau dialog yang dipentaskan.',
+            'descripsi' => 'Genre drama menyajikan cerita tentang kehidupan dengan situasi yang kompleks, emosional dan penuh konflik batin. ',
         ]);
         Genre::create([
             'id' => 3,
             'name' => 'School',
-            'descripsi' => 'Anime genre ini mengambil setting dan latar belakang sekolah. Kisahnya pun mengangkat kehidupan di sekolah, misalnya, konflik antarsiswa atau siswa dengan gurunya. Contoh anime school of life adalah My Hero Academia, Kokoro Conect, juga Ansatsu Kyoushitsu.',
+            'descripsi' => 'Anime genre ini mengambil setting dan latar belakang sekolah. Kisahnya pun mengangkat kehidupan di sekolah, misalnya, konflik antarsiswa atau siswa dengan gurunya.',
         ]);
         Genre::create([
             'id' => 4,
             'name' => 'Action',
             'descripsi' => 'Anime action merupakan jenis anime yang bertemakan aksi laga. Genre ini menjadi salah satu genre anime paling populer. Biasanya mengandung unsur perkelahian, pertarungan dan peperangan penuh aksi dan jurus-jurus keren.',
+        ]);
+        Genre::create([
+            'id' => 5,
+            'name' => 'Shoujo',
+            'descripsi' => 'Shoujo adalah kata dalam bahasa Kanji yang berarti anak perempuan. Ya, genre shoujo ini memang dibuat bagi para remaja perempuan. Mayoritas fans anime beranggapan bahwa genre ini identik dengan kisah percintaan dan tokoh utamanya perempuan, padahal tidak demikian.',
         ]);
     }
 }
